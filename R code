@@ -1,0 +1,17 @@
+### shapiro wilks test 1 
+
+setwd("C:/Users/Owner/Downloads")  # Use forward slashes, not backslashes
+> library(readxl)
+> data <- read_excel("meteorite_dataset (1).xls")
+> 
+> # Clean missing values
+> data <- data[!is.na(data$year), ]
+> 
+> # Sample 5000 values for the test
+> set.seed(123)
+> year_sample <- sample(data$year, 5000)
+> 
+> # Run the test
+> shapiro.test(year_sample)
+
+
