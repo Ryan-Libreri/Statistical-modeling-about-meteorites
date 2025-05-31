@@ -39,5 +39,39 @@ library(car)
 
 # Calculate VIF for each predictor in the model
 vif(mlr_model)
+__________________________________________________________________________________________
+cooks distance
+
+# 1. Plot standardized residuals
+plot(rstandard(mlr_model), main = "Standardized Residuals", ylab = "Standardized Residuals", pch = 20)
+abline(h = c(-2, 2), col = "red", lty = 2)
+
+# 2. Leverage values
+hat_values <- hatvalues(mlr_model)
+plot(hat_values, type = "h", main = "Leverage (Hat Values)", ylab = "Leverage")
+abline(h = 2 * mean(hat_values), col = "red", lty = 2)
+
+# 3. Cook's Distance
+plot(cooks.distance(mlr_model), type = "h", main = "Cook's Distance", ylab = "Cook's Distance")
+abline(h = 1, col = "red", lty = 2)
 
 
+___________________________________________________________________________________________
+# Q-Q Plot
+qqnorm(rstandard(mlr_model))
+qqline(rstandard(mlr_model), col = "red")
+
+# Shapiro-Wilk test
+shapiro.test(rstandard(mlr_model)[1:5000])  # Limit to 5000 for valid test
+
+___________________________________________________________________________________________
+
+homoscedasticity
+
+plot(mlr_model, which = 3)  # Scale-Location plot
+
+________________________________________________________________________________________
+N-Way anova model structure
+
+anova_model <- aov(log_mass ~ fall * recclass, data = meteorites)
+summary(anova_model)
