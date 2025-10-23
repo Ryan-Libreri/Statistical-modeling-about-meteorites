@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Ryan-Libreri/Statistical-modeling-about-meteorites/main/banner.png" alt="Statistical Modelling on Meteorites" width="100%">
+  <img src="https://raw.githubusercontent.com/Ryan-Libreri/Statistical-modeling-about-meteorites/main/banner.png" alt="Statistical Modelling on Meteorites" width="70%">
 </p>
 
 # ☄️ Statistical Modelling on Meteorites
