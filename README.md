@@ -54,11 +54,6 @@ You can access the publicly available dataset on Kaggle:
 ## 👨‍💻 Author
 
 **Ryan Libreri**  
-📧 *[Your email or LinkedIn (optional)]*  
-🌐 *[GitHub profile link]*  
+📧 ryanlibreri@gmail.com    
 
 ---
-
-## 📜 License
-
-This project is distributed under the [MIT License](LICENSE) — feel free to use, modify, and share.
