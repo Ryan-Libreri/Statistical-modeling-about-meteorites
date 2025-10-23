@@ -1,3 +1,11 @@
+<p align="center">
+  <img src="assets/meteorite_banner.png" alt="Statistical Modelling on Meteorites" width="100%">
+</p>
+
+# ☄️ Statistical Modelling on Meteorites
+Exploring spatial and temporal patterns in meteorite falls using NASA data.
+
+
 # ☄️ Statistical Modelling on Meteorites
 
 This project investigates whether meteorites falling near the equator exhibit **statistically significant patterns** in relation to:
